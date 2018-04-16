@@ -4,8 +4,11 @@ nav a{
 }
 
 body{
-	background-color:black;
-	color:white;
+	color:#ffffff;
+	height:100%;
+	background-color: #1A1A1A;
+	-webkit-font-smoothing: antialiased;
+
 }
 .navbar-brand{
 	color:white;
@@ -13,7 +16,7 @@ body{
 .nav{
 	margin-top: 30px;
 }
-.grid{
+#grid{
 	position:fixed;
 	width:100%;
 }
@@ -38,13 +41,14 @@ div{
     padding-left: 0;
     padding-right: 0;
 }
-#grid .col-xs-3 .grid-line.line {
+#grid .col-xs-3 .grid-line.hey {
     height: 100vh;
     transition: height 1.2s ease;
 }
 #grid .col-xs-3 .grid-line {
     height: 0vh;
-	border-left: 5px solid white;
+	border-left: 1px solid #000;
+	border-right: 1px solid black;
 }
 .behance{
 color: white;}
@@ -61,19 +65,92 @@ x
 ul{
 	list-style-type: none;
 	float:right;
-	line-height: 80px;
+	line-height: 50px;
 }
 #socials{
-	margin-top: 100px;
+	margin-top: 0px;
 	float: right;
 }
 h1{
-	font-weight: 200;
-	font-size: 50px;
+	font-weight: 500;
+	font-size: 72px;
     letter-spacing: 2px;
     position: relative;
 }
+section#intro .container .row {
+    position: relative;
+}
+section #intro .text{
+	transition: 2s cubic-bezier(0.99, 0.44, 0, 0.95) color;
+	position: relative;
+    left: 0px;
+    top: 100px;
+    color: #1F1F1F;
+    text-transform: uppercase;
+    z-index: -1;
+}
+section#intro .circle.circle1 {
+    position: absolute;
+    top: 500px;
+	left: 200px;
+}
+section .circle {
+    width: 40px;
+    height: 40px;
+    border: 12px solid yellow;
+    border-radius: 40%;
+    z-index: 0;
+}
+section#intro .circle.circle2 {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+}
+section .circle.lg {
+    width: 60px;
+    height: 60px;
+    border: 18px solid yellow;
+}
+@media screen and (max-width: 600px){
+section#intro .circle.circle3 {
+    left: inherit;
+    right: 25px;
+}
+}
+section#intro .circle.circle3 {
+    position: absolute;
+	bottom: 50px;
+	right:200;
+}
+section#intro .circle.circle4 {
+    position: absolute;
+    bottom: 350px;
+    left: -100px;
+}
+section .circle.lg {
+    width: 60px;
+    height: 60px;
+	border: 18px solid yellow;
+}
+@media screen and (max-width: 991px){
+section .circle {
+    opacity: .6;
+}
+}
+@media screen and (max-width: 767px){
+section#intro .circle.circle4 {
+    display: none;
+}
+}
+@media screen and (max-width: 1350px){
+section#intro .circle.circle4 {
+    left: 100px;
+}
+}
+#main-wrap{
+	margin-top:50px;
+}
+h3{
+	margin-top:50px;
+}
 
-}
-.intro{
-}
