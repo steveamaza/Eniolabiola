@@ -61,13 +61,14 @@ li{
 }
 h1{
 	font-weight: 700;
-	font-size: 165px;
+	font-size: 200px;
     letter-spacing: 2px;
 	position: relative;
 	margin-left: 50%;
 	font-size:12vw;
-	line-height: 150px;
+	line-height: 190px;
 	margin-bottom: 80px;
+	font-family: Product Sans;
 }
 section#intro .desc {
     position: absolute;
@@ -134,6 +135,7 @@ section#intro .desc {
 }
 h4{
 	color:white;
+	font-family: Source Sans Pro;
 }
 section#intro .container .row {
     position: relative;
@@ -167,49 +169,66 @@ h3{
 	height: 0;
 	border-left: 25px solid transparent;
 	border-right: 25px solid transparent;
-	border-top: 50px solid coral;
-	opacity: 0.2;
+	border-top: 50px solid yellow;
+	opacity: 0.7;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	/* margin-top: 0px; */
 }
 .diamond{width: 0;
 	height: 0;
-	border: 50px solid transparent;
-	border-bottom-color:plum;
+	border: 25 solid transparent;
+	border-bottom-color:floralwhite;
 	position: relative;
-	top: -50px;
-	
+	top: -25px;
 }
 .diamond:after {
 	content: '';
 	position: absolute;
-	left: -50px;
-	top: 50px;
+	left: -25px;
+	top: 25px;
 	width: 0;
 	height: 0;
-	border: 50px solid transparent;
-	border-top-color:plum;
+	border: 25px solid transparent;
+	border-top-color:floralwhite;
 }
 .diamond1{width: 0;
 	height: 0;
-	border: 50px solid transparent;
-	border-bottom-color:palevioletred;
-	position: relative;
-	top: 0px;
+	border: 25px solid transparent;
+	border-bottom-color:rosybrown;
+	position: absolute;
+	top: 50%;
+	left:90%
+
 }
 .diamond1:after {
 	content: '';
 	position: absolute;
-	left: -50px;
-	top: 50px;
+	left: -25px;
+	top: 25px;
 	width: 0;
 	height: 0;
-	border: 50px solid transparent;
-	border-top-color: palevioletred;
+	border: 25px solid transparent;
+	border-top-color: rosybrown;
+	position: absolute;
 }
 .circle {
 	width: 50px;
 	height: 50px;
 	background:bisque;
 	border-radius: 50px;
+	position:absolute;
+	top:50%;
+}
+.circle2 {
+	width: 50px;
+	height: 50px;
+	background:indigo;
+	border-radius: 50px;
+	position:absolute;
+	top:90%;
+	left:40%;
 }
 .share{
 	float: right;
@@ -223,26 +242,26 @@ h3{
 }
 h2{
 	font-weight:700;
-	font-size: 50px;
+	font-size: 40px;
 	margin-top: 40px;
 	color:white;
 	position:relative;
 }
-
 .hire{
 	text-align: center;
-	line-height: 2.0;
-	margin-top: 50px;
+	margin-top: 15px;
 }
 p{
-	line-height: 2.0;
-	font-weight:400;
+	line-height: 35px;
+	font-weight:300;
 	font-size:28px;
+	font-family: Source Sans Pro;
 }
 h4{
-	font-weight:600;
+	font-weight:400;
 	font-size:30px;
-	color:yellow;
+	color:grey;
+	line-height: 40px;
 }
 @media screen and (max-width: 430px){
  h2 { 
@@ -252,20 +271,79 @@ h4{
 }
 @media screen and (max-width: 380px){
 	p{ 
-		font-size:28px;
-		line-height: 1.5;
+		font-size:20px;
+		line-height: 1.2;
 	}
 }
 @media screen and (max-width: 430px){
 	p{ 
-	font-size:30px;
+	font-size:20px;
+	line-height: 1.3;
 	}
    }
-butn-info {
-    color:black;
-    background-color:white;
-    border-color:white;
+butn-info a{
+color: black;
 }
 .logo{
-	font-size: 28px;
+	font-size: 32px;
 }
+a.logo{
+	font-family: Niconne;
+}
+a.logo:hover{
+	color: pink;
+}
+a.shoot{
+	color: black;
+}
+.btn-group-lg>.btn, .btn-lg{
+	background-color: white;;
+}
+.btn-group-lg>.btn, .btn-lg:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+a:hover{
+	text-decoration: none;
+}
+.heart{
+	color:red;
+}
+@media screen and (max-width: 430px){
+	.circle {
+		opacity: 0.2;
+	}
+}
+@media screen and (max-width: 430px){
+	.circle2 {
+		opacity: 0.2;
+	}
+}
+@media screen and (max-width: 430px){
+	.diamond1{
+		opacity:0.2;
+	}
+	}
+@media screen and (max-width: 430px){
+		.triangle-up {
+			opacity: 0.2;
+		}
+}
+@media screen and (max-width: 768px){
+	.triangle-up {
+		opacity:0.2;
+	}
+}
+@media screen and (max-width: 768px){
+	.circle{
+		opacity:0.2;
+	}
+}
+@media screen and (max-width: 768px){
+	.circle2{
+		opacity:0.2;
+	}
+}
+@media screen and (max-width: 768px){
+	.diamond1{
+		opacity:0.2;
+	}
+	}
